@@ -1,20 +1,5 @@
-<div>
-  <div>
-    <h1>Lista de Tarefas</h1>
-    <div>
-      <input type="text" placeholder="Adicionar tarefa" name="tarefa" #nomeTarefa>
-      <span (click)="adicionarTarefa(nomeTarefa.value);">
-        <i>Add</i>
-      </span>
-    </div>
-  </div>
-  <div>
-    <ul>
-      <li *ngFor="let itemDoArray of tarefasArray">{{itemDoArray}}
-        <button type="checkbox" (click)="removerTarefa(itemDoArray)">Delete</button>
-      </li>
-    </ul>
-  </div>
-</div>
+<!-- cabeçalho -->
+<router-outlet></router-outlet>
+<!-- rodape -->
 
 <router-outlet></router-outlet>

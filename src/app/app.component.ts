@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,19 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- tarefasArray : string[] = [];
 
- adicionarTarefa(valor:string){
-  this.tarefasArray.push(valor);
- }
- removerTarefa(valor:string){
-  for (let i = this.tarefasArray.length; i >= 0; i--) {
-    if (valor == this.tarefasArray[i]) {
-      this.tarefasArray.splice(i, 1);
-    }
-  }
- }
- constructor(){
-  
- }
 }
